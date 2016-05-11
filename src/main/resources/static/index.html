@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>I.D.E.A.</title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<!-- Bootstrap 3.3.6 -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+<link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+
+			<!-- Logo -->
+			<a href="index2.html" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
+
+				<!-- logo for regular state and mobile devices --> <span
+				class="logo-lg"><b>I.D.E.A.</b></span>
+			</a>
+
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- Sidebar toggle button-->
+				<a href="#" class="sidebar-toggle" data-toggle="offcanvas"
+					role="button"> <span class="sr-only">Toggle navigation</span>
+				</a>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<!-- Messages: style can be found in dropdown.less-->
+						<li class="dropdown messages-menu">
+							<!-- Menu toggle button --> <a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"> <i class="fa fa-envelope-o"></i> <span
+								class="label label-success">4</span>
+						</a>
+							<ul class="dropdown-menu">
+								<li class="header">You have 4 messages</li>
+								<li>
+									<!-- inner menu: contains the messages -->
+									<ul class="menu">
+										<li>
+											<!-- start message --> <a href="#">
+												<div class="pull-left">
+													<!-- User Image -->
+													<img src="dist/img/user2-160x160.jpg" class="img-circle"
+														alt="User Image">
+												</div> <!-- Message title and timestamp -->
+												<h4>
+													Support Team <small><i class="fa fa-clock-o"></i> 5
+														mins</small>
+												</h4> <!-- The message -->
+												<p>Why not buy a new awesome theme?</p>
+										</a>
+										</li>
+										<!-- end message -->
+									</ul> <!-- /.menu -->
+								</li>
+								<li class="footer"><a href="#">See All Messages</a></li>
+							</ul>
+						</li>
+						<!-- /.messages-menu -->
+
+						<!-- Notifications Menu -->
+						<li class="dropdown notifications-menu">
+							<!-- Menu toggle button --> <a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"> <i class="fa fa-bell-o"></i> <span
+								class="label label-warning">10</span>
+						</a>
+							<ul class="dropdown-menu">
+								<li class="header">You have 10 notifications</li>
+								<li>
+									<!-- Inner Menu: contains the notifications -->
+									<ul class="menu">
+										<li>
+											<!-- start notification --> <a href="#"> <i
+												class="fa fa-users text-aqua"></i> 5 new members joined
+												today
+										</a>
+										</li>
+										<!-- end notification -->
+									</ul>
+								</li>
+								<li class="footer"><a href="#">View all</a></li>
+							</ul>
+						</li>
+						<!-- Tasks Menu -->
+						<li class="dropdown tasks-menu">
+							<!-- Menu Toggle Button --> <a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"> <i class="fa fa-flag-o"></i> <span
+								class="label label-danger">9</span>
+						</a>
+							<ul class="dropdown-menu">
+								<li class="header">You have 9 tasks</li>
+								<li>
+									<!-- Inner menu: contains the tasks -->
+									<ul class="menu">
+										<li>
+											<!-- Task item --> <a href="#"> <!-- Task title and progress text -->
+												<h3>
+													Design some buttons <small class="pull-right">20%</small>
+												</h3> <!-- The progress bar -->
+												<div class="progress xs">
+													<!-- Change the css width attribute to simulate progress -->
+													<div class="progress-bar progress-bar-aqua"
+														style="width: 20%" role="progressbar" aria-valuenow="20"
+														aria-valuemin="0" aria-valuemax="100">
+														<span class="sr-only">20% Complete</span>
+													</div>
+												</div>
+										</a>
+										</li>
+										<!-- end task item -->
+									</ul>
+								</li>
+								<li class="footer"><a href="#">View all tasks</a></li>
+							</ul>
+						</li>
+						<!-- User Account Menu -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button --> <a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"> <!-- The user image in the navbar-->
+								<!--img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+								<span class="hidden-xs">Prashant Waykar</span>
+						</a>
+							<ul class="dropdown-menu">
+								<!-- The user image in the menu -->
+								<li class="user-header"><img
+									src="dist/img/user2-160x160.jpg" class="img-circle"
+									alt="User Image"></li>
+								<!-- Menu Body -->
+								<li class="user-body">
+									<div class="row">
+										<div class="col-xs-4 text-center">
+											<a href="#">Followers</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Sales</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Friends</a>
+										</div>
+									</div> <!-- /.row -->
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="#" class="btn btn-default btn-flat">Profile</a>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="btn btn-default btn-flat">Sign out</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- Control Sidebar Toggle Button -->
+						<li><a href="#" data-toggle="control-sidebar"><i
+								class="fa fa-gears"></i></a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="dist/img/idea-logo.jpg" class="img-circle"
+							alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>Prashant Waykar</p>
+						<!-- Status -->
+						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+					</div>
+				</div>
+
+				<!-- search form (Optional) -->
+				<!--form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form-->
+				<!-- /.search form -->
+
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu">
+					<li class="header">Menu</li>
+					<!-- Optionally, you can add icons to the links -->
+					<li class="active"><a href="#"><i class="fa fa-link"></i>
+							<span>Temperature</span></a></li>
+					<li><a href="#"><i class="fa fa-link"></i> <span>Lights</span></a></li>
+					<!--li class="treeview">
+          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">Link in level 2</a></li>
+          </ul>
+        </li-->
+				</ul>
+				<!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<h1>
+					Dashboard <small>Temperature use case</small>
+				</h1>
+				<ol class="breadcrumb">
+					<li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+					<li class="active">Here</li>
+				</ol>
+			</section>
+
+			<!-- Main content -->
+			<section class="content">
+
+				<!-- Your Page Content Here -->
+				<div class="row">
+					<div class="col-lg-3 col-xs-6">
+						<!-- small box -->
+						<div class="small-box bg-aqua">
+							<div class="inner" style="text-align: center">
+								<h3>
+									<span id="latest_1">70</span><sup style="font-size: 20px">°F</sup>
+								</h3>
+								<b style="font-size: 18px">Sunny</b>
+								<h5>
+									Humidity&nbsp;<span>71<sup style="font-size: 10px">°F</sup></span>
+								</h5>
+							</div>
+							<div class="icon">
+								<i class="fa"></i>
+							</div>
+							<a href="#" class="small-box-footer">
+								<h4>Room Temperature</h4>
+
+							</a>
+						</div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+						<!-- small box -->
+						<div class="small-box bg-green">
+							<div class="inner" style="text-align: center">
+								<h3>
+									<span id="latest_2">70</span><sup style="font-size: 20px">°F</sup>
+								</h3>
+								<b style="font-size: 18px">Sunny</b>
+								<h5>
+									Humidity&nbsp;<span>77<sup style="font-size: 10px">°F</sup></span>
+								</h5>
+							</div>
+							<div class="icon">
+								<i class="ion "></i>
+							</div>
+							<a href="#" class="small-box-footer">
+								<h4>Outside Temperature</h4>
+							</a>
+						</div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+						<!-- small box -->
+						<div class="small-box bg-yellow">
+							<div class="inner" style="text-align: center">
+								<h3>
+									<span id="latest_3">70</span><sup style="font-size: 20px">°F</sup>
+								</h3>
+								<b style="font-size: 18px">Sunny</b>
+								<h5>
+									Humidity&nbsp;<span>77<sup style="font-size: 10px">°F</sup></span>
+								</h5>
+							</div>
+							<div class="icon">
+								<i class="ion"></i>
+							</div>
+							<a href="#" class="small-box-footer">
+								<h4>Active Outside Temperature</h4>
+							</a>
+						</div>
+					</div>
+					<!-- ./col -->
+					<div class="col-lg-3 col-xs-6">
+						<!-- small box -->
+						<div class="small-box bg-red">
+							<div class="inner" style="text-align: center">
+								<h3>
+									<span id="latest_4">70</span><sup style="font-size: 20px">°F</sup>
+								</h3>
+								<b style="font-size: 18px">Sunny</b>
+								<h5>
+									Humidity&nbsp;<span>77<sup style="font-size: 10px">°F</sup></span>
+								</h5>
+							</div>
+							<div class="icon">
+								<i class="ion"></i>
+							</div>
+							<a href="#" class="small-box-footer">
+								<h4>Thermostat Temperature</h4>
+							</a>
+						</div>
+					</div>
+					<!-- ./col -->
+				</div>
+				<!-- ./row -->
+				<div class="row">
+					<div class="col-md-6">
+						<!-- interactive chart 1-->
+						<div class="box box-primary">
+							<div class="box-body">
+								<!-- temperature-chart device-id="28:ff:2c:31:44:04:00:c2" chartid="temperature_chart2" name="Cottage - Indoors" />
+              <!--div id="interactive1" style="height: 300px;"></div-->
+								<div id="temperature_chart1"
+									style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+							</div>
+							<!-- /.box-body-->
+							<div class="box-footer no-border">
+								<div class="row">
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" id="chart1_max" value="72"
+											data-width="90" data-readonly="true" data-height="90"
+											data-fgColor="#3c8dbc">
+
+										<div class="knob-label">Maximum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" id="chart1_min" value="56"
+											data-width="90" data-readonly="true" data-height="90"
+											data-fgColor="#f56954">
+
+										<div class="knob-label">Minimum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="60" id="chart1_avg"
+											data-readonly="true" data-width="90" data-height="90"
+											data-fgColor="#00a65a">
+
+										<div class="knob-label">Average (°F)</div>
+									</div>
+									<!-- ./col -->
+								</div>
+								<!-- /.row -->
+
+							</div>
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col (RIGHT) -->
+					<div class="col-md-6">
+						<!-- interactive chart 2-->
+						<div class="box box-primary">
+							<div class="box-body">
+								<!-- temperature-chart device-id="28:26:1c:60:07:00:00:ad" chartid="temperature_chart1" name="Cottage - Outdoors" /-->
+								<div id="temperature_chart2"
+									style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+							</div>
+							<div class="box-footer no-border">
+								<div class="row">
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="84" id="chart2_max"
+											data-width="90" data-readonly="true" data-readonly="true"
+											data-height="90" data-fgColor="#3c8dbc" />
+
+										<div class="knob-label">Maximum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="62" id="chart2_min"
+											data-width="90" data-readonly="true" data-height="90"
+											data-fgColor="#f56954" />
+
+										<div class="knob-label">Minimum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="68" id="chart2_avg"
+											data-readonly="true" data-width="90" data-height="90"
+											data-fgColor="#00a65a" >
+
+										<div class="knob-label">Average (°F)</div>
+									</div>
+									<!-- ./col -->
+								</div>
+								<!-- /.row -->
+							</div>
+							<!-- /.box-body-->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col (RIGHT) -->
+				</div>
+				<!-- /.row -->
+				<!-- ./row -->
+				<div class="row"></div>
+				<!-- /.row -->
+
+				<div class="row">
+					<div class="col-md-6">
+						<!-- interactive chart 1-->
+						<div class="box box-primary">
+							<div class="box-body">
+								<!-- temperature-chart device-id="28:4d:4a:60:07:00:00:9f" chartid="temperature_chart3" name="Home - Outdoors ESP8266" /-->
+								<div id="temperature_chart3"
+									style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+							</div>
+							<!-- /.box-body-->
+							<div class="box-footer no-border">
+								<div class="row">
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="70" data-width="90"
+											id="chart3_max" data-readonly="true" data-height="90"
+											data-fgColor="#3c8dbc">
+
+										<div class="knob-label">Maximum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="65" id="chart3_min"
+											data-width="90" data-readonly="true" data-height="90"
+											data-fgColor="#f56954">
+
+										<div class="knob-label">Minimum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="68" id="chart3_avg"
+											data-readonly="true" data-width="90" data-height="90"
+											data-fgColor="#00a65a">
+
+										<div class="knob-label">Average (°F)</div>
+									</div>
+									<!-- ./col -->
+								</div>
+								<!-- /.row -->
+
+							</div>
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col (RIGHT) -->
+					<div class="col-md-6">
+						<!-- interactive chart 2-->
+						<div class="box box-primary">
+							<div class="box-body">
+								<!-- temperature-chart device-id="28:db:b1:1f:06:00:00:d3" chartid="temperature_chart4" name="Cottage - Indoors ESP8266" /-->
+								<div id="temperature_chart4"
+									style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+							</div>
+							<div class="box-footer no-border">
+								<div class="row">
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="87" id="chart4_max"
+											data-width="90" data-readonly="true" data-readonly="true"
+											data-height="90" data-fgColor="#3c8dbc" />
+
+										<div class="knob-label">Maximum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="58" id="chart4_min"
+											data-width="90" data-readonly="true" data-height="90"
+											data-fgColor="#f56954" />
+
+										<div class="knob-label">Minimum (°F)</div>
+									</div>
+									<!-- ./col -->
+									<div class="col-xs-4 col-md-4 text-center">
+										<input type="text" class="knob" value="68" id="chart4_avg"
+											data-readonly="true" data-width="90" data-height="90"
+											data-fgColor="#00a65a">
+
+										<div class="knob-label">Average (°F)</div>
+									</div>
+									<!-- ./col -->
+								</div>
+								<!-- /.row -->
+
+							</div>
+
+							<!-- /.box-body-->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col (RIGHT) -->
+				</div>
+				<!-- /.row -->
+				<!-- ./row -->
+				<div class="row">
+					<div class="col-md-8">
+						<!-- Line chart -->
+						<div class="box box-primary">
+							<div class="box-header with-border">
+								<i class="fa fa-bar-chart-o"></i>
+
+								<h3 class="box-title">Indoor Temperature Vs. Outdoor
+									Temperature</h3>
+
+								<div class="box-tools pull-right">
+									<button type="button" class="btn btn-box-tool"
+										data-widget="collapse">
+										<i class="fa fa-minus"></i>
+									</button>
+									<button type="button" class="btn btn-box-tool"
+										data-widget="remove">
+										<i class="fa fa-times"></i>
+									</button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div id="container1"
+									style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+							</div>
+							<!-- /.box-body-->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col -->
+					<div class="col-md-4">
+						<div class="box box-default">
+							<div class="box-header with-border">
+								<i class="fa fa-bullhorn"></i>
+
+								<h3 class="box-title">Alerts</h3>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+								<div class="callout callout-danger">
+									<h4>High Temperature!! 70.3</h4>
+									<p>Decrease indoor temperature to 50.0</p>
+								</div>
+								<div class="callout callout-info">
+									<h4>High Temperature!! 71.1</h4>
+									<p>Decrease indoor temperature to 50.0</p>
+								</div>
+								<div class="callout callout-warning">
+									<h4>Low Temperature!! 65.2</h4>
+									<p>Increase indoor temperature to 56.0</p>
+								</div>
+							</div>
+							<!-- /.box-body -->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col -->
+
+				</div>
+				<!-- /.row -->
+				<!-- ./row -->
+				<div class="row">
+					<div class="col-md-8">
+						<!-- Line chart -->
+						<div class="box box-primary">
+							<div class="box-header with-border">
+								<i class="fa fa-bar-chart-o"></i>
+
+								<h3 class="box-title">Active Temperature (Yahoo) Vs.
+									Outdoor Temperature (Installed device)</h3>
+
+								<div class="box-tools pull-right">
+									<button type="button" class="btn btn-box-tool"
+										data-widget="collapse">
+										<i class="fa fa-minus"></i>
+									</button>
+									<button type="button" class="btn btn-box-tool"
+										data-widget="remove">
+										<i class="fa fa-times"></i>
+									</button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div id="container2"
+									style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+								<!--div id="line-chart2" style="height: 300px;"></div-->
+							</div>
+							<!-- /.box-body-->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col -->
+					<div class="col-md-4">
+						<div class="box box-default">
+							<div class="box-header with-border">
+								<i class="fa fa-bullhorn"></i>
+
+								<h3 class="box-title">Alerts</h3>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+								<div class="callout callout-danger" style="margin: 0 0 16px 0">
+									<h4>Temperature Difference &gt; 2</h4>
+								</div>
+								<div class="callout callout-info" style="margin: 0 0 16px 0">
+									<h4>Temperature Difference &lt; 0.5</h4>
+								</div>
+								<div class="callout callout-warning" style="margin: 0 0 16px 0">
+									<h4>Temperature Difference &lt; -0.5</h4>
+								</div>
+								<div class="callout callout-danger" style="margin: 0 0 16px 0">
+									<h4>Temperature Difference &lt; 2</h4>
+								</div>
+							</div>
+							<!-- /.box-body -->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- /.col -->
+
+				</div>
+				<!-- /.row -->
+				<!-- =========================================================== -->
+
+				<!-- TABLE: LATEST ORDERS -->
+				<div class="box box-info">
+					<div class="box-header with-border">
+						<h3 class="box-title">Temperature Forecast</h3>
+
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool"
+								data-widget="collapse">
+								<i class="fa fa-minus"></i>
+							</button>
+							<button type="button" class="btn btn-box-tool"
+								data-widget="remove">
+								<i class="fa fa-times"></i>
+							</button>
+						</div>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<div id="active_table" class="table-responsive">
+							
+							
+							
+						</div>
+						<!-- /.table-responsive -->
+					</div>
+					<!-- /.box-body -->
+
+					<!-- /.box-footer -->
+				</div>
+				<!-- /.box -->
+
+				<!-- /.row -->
+
+
+
+			</section>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			<!-- To the right -->
+			<div class="pull-right hidden-xs">Anything you want</div>
+			<!-- Default to the left -->
+			<strong>Copyright &copy; 2015 <a href="#">Company</a>.
+			</strong> All rights reserved.
+		</footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark">
+			<!-- Create the tabs -->
+			<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+				<li class="active"><a href="#control-sidebar-home-tab"
+					data-toggle="tab"><i class="fa fa-home"></i></a></li>
+				<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i
+						class="fa fa-gears"></i></a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Home tab content -->
+				<div class="tab-pane active" id="control-sidebar-home-tab">
+					<h3 class="control-sidebar-heading">Recent Activity</h3>
+					<ul class="control-sidebar-menu">
+						<li><a href="javascript::;"> <i
+								class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+									<p>Will be 23 on April 24th</p>
+								</div>
+						</a></li>
+					</ul>
+					<!-- /.control-sidebar-menu -->
+
+					<h3 class="control-sidebar-heading">Tasks Progress</h3>
+					<ul class="control-sidebar-menu">
+						<li><a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									Custom Template Design <span
+										class="label label-danger pull-right">70%</span>
+								</h4>
+
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-danger"
+										style="width: 70%"></div>
+								</div>
+						</a></li>
+					</ul>
+					<!-- /.control-sidebar-menu -->
+
+				</div>
+				<!-- /.tab-pane -->
+				<!-- Stats tab content -->
+				<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab
+					Content</div>
+				<!-- /.tab-pane -->
+				<!-- Settings tab content -->
+				<div class="tab-pane" id="control-sidebar-settings-tab">
+					<form method="post">
+						<h3 class="control-sidebar-heading">General Settings</h3>
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading"> Report panel
+								usage <input type="checkbox" class="pull-right" checked>
+							</label>
+
+							<p>Some information about this general settings option</p>
+						</div>
+						<!-- /.form-group -->
+					</form>
+				</div>
+				<!-- /.tab-pane -->
+			</div>
+		</aside>
+		<!-- /.control-sidebar -->
+		<!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+		<div class="control-sidebar-bg"></div>
+	</div>
+	<!-- ./wrapper -->
+
+	<!-- REQUIRED JS SCRIPTS -->
+
+	<!-- jQuery 2.2.0 -->
+	<script src="lib/jQuery-2.2.0.min.js"></script>
+	<!-- Bootstrap 3.3.6 -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- AdminLTE App -->
+	<script src="dist/js/app.min.js"></script>
+	<!-- FLOT CHARTS -->
+	<script src="lib/jquery.flot.min.js"></script>
+	<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+	<script src="lib/jquery.flot.resize.min.js"></script>
+	<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+	<script src="lib/jquery.flot.pie.min.js"></script>
+	<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+	<script src="lib/jquery.flot.categories.min.js"></script>
+
+	<!-- jQuery Knob -->
+	<script src="lib/jquery.knob.js"></script>
+	<!-- Sparkline -->
+	<!-- Angular JS -->
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="lib/highcharts.js"></script>
+
+	<script src="lib/sockjs-0.3.4.js"></script>
+	<script src="lib/stomp.js"></script>
+
+	<!-- Page script -->
+	<script>
+
+var app = angular.module("myApp", []);
+    //-------------[ Temperature Controller ]-----------------------//
+/*
+    app.service('chartService',['$http', function chartService($http) {
+      this.chartData={};
+      this.averageValue = 0;
+      this.maximumValue = 0;
+      this.minimumValue = 0;  
+
+      this.getChart = function(chartId, deviceId){
+    //var url = 'http://localhost:9999/temperature?deviceId='+deviceId+'&callback=JSON_CALLBACK';
+    //var url = 'http://whipple.dyndns-home.com/jsonpKairosdb.jsp?deviceId=28:26:1c:60:07:00:00:ad&callback=JSON_CALLBACK';
+    //var url = 'http://whipple.dyndns-home.com/jsonpKairosdb.jsp?deviceId='+deviceId+'&callback=JSON_CALLBACK';
+        //console.log("in pollig")
+        var request = $http.jsonp(url);
+
+
+    request.error(function(){
+      console.log(' Error Retrieving Data');
+    });
+
+    request.success(function(data) {
+      //console.log("test",JSON.stringify(data));
+      //console.log(JSON.stringify(this.chartData));
+      this.chartData = data.queries[0].results[0].values;
+
+      
+      //this.averageValue = 1;// data.queries[0].results[0].aggregation[0]["avg"];
+      //this.maximumValue = data.queries[0].results[0].aggregation[0]["max"];
+      //this.minimumValue = data.queries[0].results[0].aggregation[0]["min"];
+      //console.log(this.averageValue);
+
+      if(chartId == "temperature_chart1"){
+        temperature_chart1_value = this.chartData;
+      }else if(chartId == "temperature_chart2"){
+        temperature_chart2_value = this.chartData;
+      }else if(chartId == "temperature_chart3"){
+        temperature_chart3_value = this.chartData;
+      }else if(chartId == "temperature_chart4"){
+        temperature_chart4_value = this.chartData;
+        
+      }
+      //app.value(chartId, this.chartData);
+            //$('#'+chartId).highcharts().series[0].setData(this.chartData);
+            //console.log("Update charts..");
+      $('#'+chartId).highcharts({
+
+                chart: { zoomType: 'x'},
+                title: { text: 'Temperature' },
+                subtitle: null,
+                xAxis: { type: 'datetime' },
+                yAxis: { title: { text: 'Temp F' } },
+      tooltip: {
+              pointFormat: "Temperature: {point.y:.1f} F"
+          },
+                legend: { enabled: false },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                //[0, '#3333FF'],
+                                [0, Highcharts.Color('#777777').setOpacity(0.75).get('rgba')],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.15).get('rgba')],
+                            ]
+                        },
+                        marker: {
+                            radius: 0
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'Temperature F',
+                    data: this.chartData
+                }]
+          });
+
+      
+
+    });
+    return this;
+  }
+}] );
+
+    app.directive('temperatureChart', function($http, chartService, $timeout){
+        return {
+    scope: true  // use a child scope that inherits from parent
+        , restrict: 'E'
+        , replace: 'false'
+        , template: '<div class="panel panel-default"><div class="panel-heading">{{temperatureName}} Temperature {{my}}</div><div class="panel-body"><div style="height: 250px;" id="{{chartId}}" config="chartConfig"></div></div></div>'
+            //, controller:'controller1'
+    , link: function(scope, elem, attrs) {
+      chartService.host = 'localhost:9999';
+      Highcharts.setOptions({global: { useUTC: false } });
+            scope.temperatureName = attrs.name;
+            scope.chartId = attrs.chartid;
+      scope.deviceId = attrs.deviceId;
+      //scope.my = 1;
+      //console.log("AVERAGE", chartService.averageValue);
+
+      //refreshData = function(){
+        //chartService.getChart(scope.chartId, scope.deviceId);
+      //};
+
+      //refreshData();
+
+            var refresh = function() {
+                    $timeout(function() {
+                        chartService.getChart(scope.chartId, scope.deviceId);
+                        //console.log(x);
+                        refresh();
+                        
+                 }, 5000);
+            };     
+            refresh();
+
+      elem.bind('click', function() {
+            });
+
+    }
+
+    };
+    });*/
+  // Random float between
+function randomFloatBetween(minValue,maxValue,precision){
+    if(typeof(precision) == 'undefined'){
+        precision = 2;
+    }
+    return parseFloat(Math.min(minValue + (Math.random() * (maxValue - minValue)),maxValue).toFixed(precision));
+}
+
+function updateChart(chartId, seriesArray){
+  console.log(seriesArray);
+        $('#'+chartId).highcharts({
+
+                chart: { zoomType: 'x'/*, events : {
+                    load : function () {
+
+                        // set up the updating of the chart each second
+                        var series = this.series[0];
+                        setInterval(function () {
+                            var x = (new Date()).getTime(), // current time
+                                y = Math.round(Math.random() * 100);
+                            series.addPoint([x, y], true, true);
+                        }, 1000);
+                    }
+                }*/},
+                title: { text: 'Temperature' },
+                subtitle: null,
+                xAxis: { type: 'datetime' },
+                yAxis: { title: { text: 'Temp F' } },
+      tooltip: {
+              pointFormat: "Temperature: {point.y:.1f} F"
+          },
+                legend: { enabled: false },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                //[0, '#3333FF'],
+                                [0, Highcharts.Color('#777777').setOpacity(0.75).get('rgba')],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.15).get('rgba')],
+                            ]
+                        },
+                        marker: {
+                            radius: 0
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: seriesArray
+          });
+}
+
+  //setInterval(testCall, 15000);
+
+  function testCall(){
+    var seriesArray1 = [{name:"Name 1", type:"area", data: temperature_chart1_value},{name:"Name", type:"area", data: temperature_chart2_value}];
+
+    var seriesArray2 = [{name:"Name 1", type:"area", data: temperature_chart3_value},{name:"Name", type:"area", data: temperature_chart4_value}];
+
+    updateChart("container1",seriesArray1);
+    updateChart("container2",seriesArray2);
+
+  }
+  
+
+  $(function () {
+
+	    $(".knob").knob({
+	      draw: function () {
+	    	  
+	      }
+	    });
+	    /* END JQUERY KNOB */
+
+	  });
+  /*
+   * Custom Label formatter
+   * ----------------------
+   */
+  function labelFormatter(label, series) {
+    return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">'
+        + label
+        + "<br>"
+        + Math.round(series.percent) + "%</div>";
+  }
+</script>
+	<script type="text/javascript">
+        var stompClient = null;
+        var i = 0;
+        var deviceIds = ["28-ff-2c-31-44-04-00-c2","28-26-1c-60-07-00-00-ad","28-4d-4a-60-07-00-00-9f","28-db-b1-1f-06-00-00-d3"];
+        var temperature_chart1_value;
+        var temperature_chart2_value;
+        var temperature_chart3_value;
+        var temperature_chart4_value;
+        var chart1_aggregator;
+        var elementIds = ["temperature_chart1","temperature_chart2","temperature_chart3","temperature_chart4"];
+        function setConnected(connected) {
+            /*document.getElementById('connect').disabled = connected;
+            document.getElementById('disconnect').disabled = !connected;
+            document.getElementById('conversationDiv').style.visibility = connected ? 'visible' : 'hidden';
+            document.getElementById('response').innerHTML = '';*/
+        }
+        
+        function connect() {
+            var socket = new SockJS('/temperature');
+            stompClient = Stomp.over(socket);            
+            stompClient.connect({}, function(frame) {
+                setConnected(true);
+                console.log('Connected: ' + frame);
+                stompClient.subscribe('/topic/temperature/latest', function(data){
+                    //showGreeting(greeting);
+                    getLatestTemperature(data);
+                });
+                stompClient.subscribe('/topic/temperature/forecast', function(data){
+                    getForecastTemperature(data);
+                });
+                stompClient.subscribe('/topic/temperature/general', function(data){
+                    getGeneralTemperature(data);
+                });
+                stompClient.subscribe('/topic/temperature/activetemperature', function(data){
+                    updateActiveTemperature(data);
+                });
+                startSending();
+            });
+
+        }
+        
+        function disconnect() {
+            if (stompClient != null) {
+                stompClient.disconnect();
+            }
+            setConnected(false);
+            console.log("Disconnected");
+        }
+        
+        
+
+        function getLatestTemperature(data){
+          //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
+          console.log("getLatestTemperature", data.body);
+          if(data != null){
+        	  if(data.body != null){
+	    		  var jsonObj = JSON.parse(data.body);
+	    		  var dId = jsonObj.queries[0].results[0].name;
+	    		  var val = jsonObj.queries[0].results[0].values;
+	    		  //get single value to update "values":[[1462114482899,63.05]
+	    		  if(val.length > 0){
+	    		    var latestValue = val[0][1]; 
+					if(dId == "28-ff-2c-31-44-04-00-c2"){
+						chartId = "latest_1";
+					}else if(dId == "28-26-1c-60-07-00-00-ad"){
+						chartId = "latest_2";
+					}else if(dId == "28-4d-4a-60-07-00-00-9f"){
+						chartId = "latest_3";
+					}else if(dId == "28-db-b1-1f-06-00-00-d3"){
+						chartId = "latest_4";
+					}
+					document.getElementById(chartId).innerHTML = latestValue.toPrecision(4);
+	    		  }
+        	  }
+          }
+        }
+        
+        function getGeneralTemperature(data){
+            //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
+            console.log("getGeneralTemperature", data.body);
+            if(data != null){
+          	  if(data.body != null){
+          		  var jsonObj = JSON.parse(data.body);
+          		  var dId = jsonObj.queries[0].results[0].name;
+          		  var val = jsonObj.queries[0].results[0].values;
+          		  var aggregator = jsonObj.queries[0].results[0].aggregation;
+                  var deviceIds = ["28-ff-2c-31-44-04-00-c2","28-26-1c-60-07-00-00-ad","28-4d-4a-60-07-00-00-9f","28-db-b1-1f-06-00-00-d3"];
+                  var elementIds = ["temperature_chart1","temperature_chart2","temperature_chart3","temperature_chart4"];
+
+					var chartId;
+          		    if(dId == "28-ff-2c-31-44-04-00-c2"){
+						chartId = "temperature_chart1";
+						temperature_chart1_value = val;
+						chart1_aggregator = aggregator;
+						document.getElementById('chart1_max').value = aggregator[0].max.toPrecision(4);
+						document.getElementById('chart1_min').value = aggregator[0].min.toPrecision(4);
+						document.getElementById('chart1_avg').value = aggregator[0].avg.toPrecision(4);
+						
+					}else if(dId == "28-26-1c-60-07-00-00-ad"){
+						chartId = "temperature_chart2";
+						temperature_chart2_value = val;
+						document.getElementById('chart2_max').value = aggregator[0].max.toPrecision(4);
+						document.getElementById('chart2_min').value = aggregator[0].min.toPrecision(4);
+						document.getElementById('chart2_avg').value = aggregator[0].avg.toPrecision(4);
+					}else if(dId == "28-4d-4a-60-07-00-00-9f"){
+						chartId = "temperature_chart3";
+						temperature_chart3_value = val;
+						document.getElementById('chart3_max').value = aggregator[0].max.toPrecision(4);
+						document.getElementById('chart3_min').value = aggregator[0].min.toPrecision(4);
+						document.getElementById('chart3_avg').value = aggregator[0].avg.toPrecision(4);
+					}else if(dId == "28-db-b1-1f-06-00-00-d3"){
+						chartId = "temperature_chart4";
+						temperature_chart4_value = val;
+						document.getElementById('chart4_max').value = aggregator[0].max.toPrecision(4);
+						document.getElementById('chart4_min').value = aggregator[0].min.toPrecision(4);
+						document.getElementById('chart4_avg').value = aggregator[0].avg.toPrecision(4);
+					}
+          		    //var chart = ("#"+chartId).highcharts();
+          		    var seriesArray1 = [{name:"Name 1", type:"area", data: val}];
+          		    updateChart(chartId, seriesArray1);
+          		    testCall();
+          	  }
+            }
+          }
+
+
+        function getForecastTemperature(data){
+            //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
+            console.log("getForecastTemperature", data.body);
+        }
+        
+        function updateActiveTemperature(data){
+			if(data != null){
+				if(data.body != null){
+					var jsonObj = JSON.parse(data.body);
+					var daily = jsonObj.daily;
+					var summary = daily.summary;
+					console.log("Summary : " + summary);
+					var icon = daily.icon;
+					var html = '<div><img src="' +getIcon(icon)+'" />' + '<h4>'+summary+'</h4></div>';
+					
+					var data = daily.data;
+			        html+= '<table class="table no-margin">'+
+			        '<thead><tr><th>Day/Time</th><th>Summary</th><th>Weather</th><th>Maximum</th><th>Minimum</th></tr></thead><tbody>';
+
+					for(var i=0; i < data.length; i++){
+						//construct the html and finally append it to the main html div
+						var dataItem = data[i];
+						html+='<tr>'+
+							'<td><a href="#">' + getDayOfWeek(dataItem.time) + '</a></td>'+
+							'<td>' + dataItem.summary + '</td>'+
+							'<td><img src="' +getIcon(dataItem.icon)+'" /></td>'+
+							'<td>'+ dataItem.temperatureMax + '<span class="sparkbar"> °F</span></td>'+
+							'<td><div class="sparkbar" data-color="#00a65a" data-height="20">'+ dataItem.temperatureMin +'°F</div>'+
+							'</td>'+
+						'</tr>';
+					}
+					html+='</tbody></table>';
+					var node = document.getElementById('active_table');
+					while (node.hasChildNodes()) {
+					    node.removeChild(node.firstChild);
+					}
+					document.getElementById('active_table').innerHTML = html;
+				}
+			}
+        }
+        
+        function getDayOfWeek(dateTime){
+        	var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        	var myDate = new Date(dateTime * 1000);
+        	var dayOfWeek = days[myDate.getDay()];
+        	return dayOfWeek;
+        }
+        
+        function getIcon(iconStr){
+        	
+			if(iconStr=='clear-day'){
+				iconStr = 'http://openweathermap.org/img/w/01d.png'
+			}
+			else if(iconStr=='clear-night'){
+			    iconStr = 'http://openweathermap.org/img/w/01n.png'
+			}
+			else if(iconStr=='rain'){
+			    iconStr = 'http://openweathermap.org/img/w/10d.png'
+			}
+			else if(iconStr=='snow'){
+			    iconStr = 'http://openweathermap.org/img/w/13d.png'
+			}
+			else if(iconStr=='sleet'){
+			    iconStr = 'http://openweathermap.org/img/w/13d.png'
+			}
+			else if(iconStr=='wind'){
+			    iconStr = 'http://openweathermap.org/img/w/01d.png'
+			}
+			else if(iconStr=='fog'){
+			    iconStr = 'http://openweathermap.org/img/w/50d.png'
+			}
+			else if(iconStr=='cloudy'){
+			    iconStr = 'http://openweathermap.org/img/w/04d.png'
+			}
+			else if(iconStr=='partly-cloudy-day'){
+			    iconStr = 'http://openweathermap.org/img/w/02d.png'
+			}
+			else if(iconStr=='partly-cloudy-night'){
+			    iconStr = 'http://openweathermap.org/img/w/02n.png'
+			}   
+			return iconStr;
+        }
+
+        
+        function sendName() {
+          //list of id's in for loop 
+          for(var x = 0; x < deviceIds.length; x++){
+        	  //send for general requests
+        	  var id = deviceIds[x];
+              stompClient.send("/app/temperature/general/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
+              stompClient.send("/app/temperature/latest/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
+          }
+          //stompClient.send("/app/temperature/latest/deviceId/"+deviceId1+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
+          //stompClient.send("/app/temperature/forecast/deviceId/"+deviceId2+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '2' }));
+
+        }
+
+        connect();
+        //initialize charts
+        var seriesArray1 = [{name:"", type:"area", data: []}];
+        Highcharts.setOptions({global: { useUTC: false } });
+        updateChart("container1",seriesArray1);
+        updateChart("container2",seriesArray1);
+        
+        updateChart("temperature_chart1", seriesArray1);
+        updateChart("temperature_chart2", seriesArray1);
+        updateChart("temperature_chart3", seriesArray1);
+        updateChart("temperature_chart4", seriesArray1);
+        
+        function startSending(){
+          setInterval(sendName, 3000);
+          setInterval(getActiveTemperature, 3000);
+        }
+        function getActiveTemperature(){
+        	stompClient.send("/app/temperature/activetemperature/deviceId/test?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
+        }
+        
+        
+    </script>
+
+</body>
+</html>
