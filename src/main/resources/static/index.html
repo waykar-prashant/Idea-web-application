@@ -801,22 +801,22 @@ desired effect
 	<!-- REQUIRED JS SCRIPTS -->
 
 	<!-- jQuery 2.2.0 -->
-	<script src="library/jQuery-2.2.0.min.js"></script>
+	<script src="lib/jQuery-2.2.0.min.js"></script>
 	<!-- Bootstrap 3.3.6 -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="dist/js/app.min.js"></script>
 	<!-- FLOT CHARTS -->
-	<script src="library/jquery.flot.min.js"></script>
+	<script src="lib/jquery.flot.min.js"></script>
 	<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
-	<script src="library/jquery.flot.resize.min.js"></script>
+	<script src="lib/jquery.flot.resize.min.js"></script>
 	<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-	<script src="library/jquery.flot.pie.min.js"></script>
+	<script src="lib/jquery.flot.pie.min.js"></script>
 	<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-	<script src="library/jquery.flot.categories.min.js"></script>
+	<script src="lib/jquery.flot.categories.min.js"></script>
 
 	<!-- jQuery Knob -->
-	<script src="library/jquery.knob.js"></script>
+	<script src="lib/jquery.knob.js"></script>
 	<!-- Sparkline -->
 	<!-- Angular JS -->
 	<script
@@ -840,140 +840,7 @@ var time;
 var temperature;
 
     //-------------[ Temperature Controller ]-----------------------//
-/*
-    app.service('chartService',['$http', function chartService($http) {
-      this.chartData={};
-      this.averageValue = 0;
-      this.maximumValue = 0;
-      this.minimumValue = 0;  
 
-      this.getChart = function(chartId, deviceId){
-    //var url = 'http://localhost:9999/temperature?deviceId='+deviceId+'&callback=JSON_CALLBACK';
-    //var url = 'http://whipple.dyndns-home.com/jsonpKairosdb.jsp?deviceId=28:26:1c:60:07:00:00:ad&callback=JSON_CALLBACK';
-    //var url = 'http://whipple.dyndns-home.com/jsonpKairosdb.jsp?deviceId='+deviceId+'&callback=JSON_CALLBACK';
-        //console.log("in pollig")
-        var request = $http.jsonp(url);
-
-
-    request.error(function(){
-      console.log(' Error Retrieving Data');
-    });
-
-    request.success(function(data) {
-      //console.log("test",JSON.stringify(data));
-      //console.log(JSON.stringify(this.chartData));
-      this.chartData = data.queries[0].results[0].values;
-
-      
-      //this.averageValue = 1;// data.queries[0].results[0].aggregation[0]["avg"];
-      //this.maximumValue = data.queries[0].results[0].aggregation[0]["max"];
-      //this.minimumValue = data.queries[0].results[0].aggregation[0]["min"];
-      //console.log(this.averageValue);
-
-      if(chartId == "temperature_chart1"){
-        temperature_chart1_value = this.chartData;
-      }else if(chartId == "temperature_chart2"){
-        temperature_chart2_value = this.chartData;
-      }else if(chartId == "temperature_chart3"){
-        temperature_chart3_value = this.chartData;
-      }else if(chartId == "temperature_chart4"){
-        temperature_chart4_value = this.chartData;
-        
-      }
-      //app.value(chartId, this.chartData);
-            //$('#'+chartId).highcharts().series[0].setData(this.chartData);
-            //console.log("Update charts..");
-      $('#'+chartId).highcharts({
-
-                chart: { zoomType: 'x'},
-                title: { text: 'Temperature' },
-                subtitle: null,
-                xAxis: { type: 'datetime' },
-                yAxis: { title: { text: 'Temp F' } },
-      tooltip: {
-              pointFormat: "Temperature: {point.y:.1f} F"
-          },
-                legend: { enabled: false },
-                plotOptions: {
-                    area: {
-                        fillColor: {
-                            linearGradient: {
-                                x1: 0,
-                                y1: 0,
-                                x2: 0,
-                                y2: 1
-                            },
-                            stops: [
-                                //[0, '#3333FF'],
-                                [0, Highcharts.Color('#777777').setOpacity(0.75).get('rgba')],
-                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.15).get('rgba')],
-                            ]
-                        },
-                        marker: {
-                            radius: 0
-                        },
-                        lineWidth: 1,
-                        states: {
-                            hover: {
-                                lineWidth: 1
-                            }
-                        },
-                        threshold: null
-                    }
-                },
-                series: [{
-                    type: 'area',
-                    name: 'Temperature F',
-                    data: this.chartData
-                }]
-          });
-
-      
-
-    });
-    return this;
-  }
-}] );
-
-    app.directive('temperatureChart', function($http, chartService, $timeout){
-        return {
-    scope: true  // use a child scope that inherits from parent
-        , restrict: 'E'
-        , replace: 'false'
-        , template: '<div class="panel panel-default"><div class="panel-heading">{{temperatureName}} Temperature {{my}}</div><div class="panel-body"><div style="height: 250px;" id="{{chartId}}" config="chartConfig"></div></div></div>'
-            //, controller:'controller1'
-    , link: function(scope, elem, attrs) {
-      chartService.host = 'localhost:9999';
-      Highcharts.setOptions({global: { useUTC: false } });
-            scope.temperatureName = attrs.name;
-            scope.chartId = attrs.chartid;
-      scope.deviceId = attrs.deviceId;
-      //scope.my = 1;
-      //console.log("AVERAGE", chartService.averageValue);
-
-      //refreshData = function(){
-        //chartService.getChart(scope.chartId, scope.deviceId);
-      //};
-
-      //refreshData();
-
-            var refresh = function() {
-                    $timeout(function() {
-                        chartService.getChart(scope.chartId, scope.deviceId);
-                        //console.log(x);
-                        refresh();
-                        
-                 }, 5000);
-            };     
-            refresh();
-
-      elem.bind('click', function() {
-            });
-
-    }
-
-    };
-    });*/
   // Random float between
 function randomFloatBetween(minValue,maxValue,precision){
     if(typeof(precision) == 'undefined'){
@@ -1287,6 +1154,59 @@ function updateChart(chartId, seriesArray){
 			}
         }
         
+        function sendProcessingRequests() {
+          //list of id's in for loop 
+          sendGeneralRequest();
+          setInterval(sendLatestRequest, 1000);
+          sendForecastRequest();
+          comparisonCharts();
+          //send Recommendation request for deviceId
+          setInterval(sendTemperatureRecommendation, 5000);
+        }
+
+        connect();
+        //initialize charts
+        //var seriesArray1 = [{name:"", type:"area", data: []}];
+        Highcharts.setOptions({global: { useUTC: false } });
+
+        function sendGeneralRequest(){
+            for(var x = 0; x < deviceIds.length; x++){
+          	  //send for general requests
+          	  var id = deviceIds[x];
+              stompClient.send("/app/temperature/general/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
+            }
+        }
+        
+        function sendLatestRequest(){
+            for(var x = 0; x < deviceIds.length; x++){
+            	  //send for latest requests
+            	  var id = deviceIds[x];
+                stompClient.send("/app/temperature/latest/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
+              }
+        }
+        
+        function sendForecastRequest(){
+        	//send forecast request
+        	stompClient.send("/app/temperature/activetemperature/deviceId/test?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
+        }
+        
+        function comparisonCharts(){
+          var seriesArray1 = [{name:"Name 1", type:"area", data: temperature_chart1_value},{name:"Name", type:"area", data: temperature_chart2_value}];
+          var seriesArray2 = [{name:"Name 1", type:"area", data: temperature_chart3_value},{name:"Name", type:"area", data: temperature_chart4_value}];
+          updateChart("container1",seriesArray1);
+          updateChart("container2",seriesArray2);
+        }
+        
+        function sendTemperatureRecommendation(){
+            for(var x = 0; x < deviceIds.length; x++){
+          	  //send for temp recommendations
+          	  var id = deviceIds[x];
+              stompClient.send("/app/temperature/get-temp-notification/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
+            }
+        	
+        }
+
+        
         function getDayOfWeek(dateTime){
         	var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
         	var myDate = new Date(dateTime * 1000);
@@ -1327,49 +1247,6 @@ function updateChart(chartId, seriesArray){
 			}   
 			return iconStr;
         }
-
-        
-        function sendProcessingRequests() {
-          //list of id's in for loop 
-          sendGeneralRequest();
-          setInterval(sendLatestRequest, 1000);
-          sendForecastRequest();
-          comparisonCharts();
-        }
-
-        connect();
-        //initialize charts
-        //var seriesArray1 = [{name:"", type:"area", data: []}];
-        Highcharts.setOptions({global: { useUTC: false } });
-
-        function sendGeneralRequest(){
-            for(var x = 0; x < deviceIds.length; x++){
-          	  //send for general requests
-          	  var id = deviceIds[x];
-              stompClient.send("/app/temperature/general/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
-            }
-        }
-        
-        function sendLatestRequest(){
-            for(var x = 0; x < deviceIds.length; x++){
-            	  //send for latest requests
-            	  var id = deviceIds[x];
-                stompClient.send("/app/temperature/latest/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
-              }
-        }
-        
-        function sendForecastRequest(){
-        	//send forecast request
-        	stompClient.send("/app/temperature/activetemperature/deviceId/test?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
-        }
-        
-        function comparisonCharts(){
-          var seriesArray1 = [{name:"Name 1", type:"area", data: temperature_chart1_value},{name:"Name", type:"area", data: temperature_chart2_value}];
-          var seriesArray2 = [{name:"Name 1", type:"area", data: temperature_chart3_value},{name:"Name", type:"area", data: temperature_chart4_value}];
-          updateChart("container1",seriesArray1);
-          updateChart("container2",seriesArray2);
-        }
-
     </script>
 
 </body>
