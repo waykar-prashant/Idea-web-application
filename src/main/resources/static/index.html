@@ -380,7 +380,7 @@ desired effect
 							<div class="box-footer no-border">
 								<div class="row">
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" id="chart1_max" value="72"
+										<input type="text" class="knob" id="temperature_chart1_max" value="72"
 											data-width="90" data-readonly="true" data-height="90"
 											data-fgColor="#3c8dbc">
 
@@ -388,7 +388,7 @@ desired effect
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" id="chart1_min" value="56"
+										<input type="text" class="knob" id="temperature_chart1_min" value="56"
 											data-width="90" data-readonly="true" data-height="90"
 											data-fgColor="#f56954">
 
@@ -396,7 +396,7 @@ desired effect
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="60" id="chart1_avg"
+										<input type="text" class="knob" value="60" id="temperature_chart1_avg"
 											data-readonly="true" data-width="90" data-height="90"
 											data-fgColor="#00a65a">
 
@@ -423,7 +423,7 @@ desired effect
 							<div class="box-footer no-border">
 								<div class="row">
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="84" id="chart2_max"
+										<input type="text" class="knob" value="84" id="temperature_chart2_max"
 											data-width="90" data-readonly="true" data-readonly="true"
 											data-height="90" data-fgColor="#3c8dbc" />
 
@@ -431,7 +431,7 @@ desired effect
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="62" id="chart2_min"
+										<input type="text" class="knob" value="62" id="temperature_chart2_min"
 											data-width="90" data-readonly="true" data-height="90"
 											data-fgColor="#f56954" />
 
@@ -439,7 +439,7 @@ desired effect
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="68" id="chart2_avg"
+										<input type="text" class="knob" value="68" id="temperature_chart2_avg"
 											data-readonly="true" data-width="90" data-height="90"
 											data-fgColor="#00a65a" >
 
@@ -474,14 +474,14 @@ desired effect
 								<div class="row">
 									<div class="col-xs-4 col-md-4 text-center">
 										<input type="text" class="knob" value="70" data-width="90"
-											id="chart3_max" data-readonly="true" data-height="90"
+											id="temperature_chart3_max" data-readonly="true" data-height="90"
 											data-fgColor="#3c8dbc">
 
 										<div class="knob-label">Maximum (°F)</div>
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="65" id="chart3_min"
+										<input type="text" class="knob" value="65" id="temperature_chart3_min"
 											data-width="90" data-readonly="true" data-height="90"
 											data-fgColor="#f56954">
 
@@ -489,7 +489,7 @@ desired effect
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="68" id="chart3_avg"
+										<input type="text" class="knob" value="68" id="temperature_chart3_avg"
 											data-readonly="true" data-width="90" data-height="90"
 											data-fgColor="#00a65a">
 
@@ -515,7 +515,7 @@ desired effect
 							<div class="box-footer no-border">
 								<div class="row">
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="87" id="chart4_max"
+										<input type="text" class="knob" value="87" id="temperature_chart4_max"
 											data-width="90" data-readonly="true" data-readonly="true"
 											data-height="90" data-fgColor="#3c8dbc" />
 
@@ -523,7 +523,7 @@ desired effect
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="58" id="chart4_min"
+										<input type="text" class="knob" value="58" id="temperature_chart4_min"
 											data-width="90" data-readonly="true" data-height="90"
 											data-fgColor="#f56954" />
 
@@ -531,7 +531,7 @@ desired effect
 									</div>
 									<!-- ./col -->
 									<div class="col-xs-4 col-md-4 text-center">
-										<input type="text" class="knob" value="68" id="chart4_avg"
+										<input type="text" class="knob" value="68" id="temperature_chart4_avg"
 											data-readonly="true" data-width="90" data-height="90"
 											data-fgColor="#00a65a">
 
@@ -801,35 +801,44 @@ desired effect
 	<!-- REQUIRED JS SCRIPTS -->
 
 	<!-- jQuery 2.2.0 -->
-	<script src="lib/jQuery-2.2.0.min.js"></script>
+	<script src="library/jQuery-2.2.0.min.js"></script>
 	<!-- Bootstrap 3.3.6 -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="dist/js/app.min.js"></script>
 	<!-- FLOT CHARTS -->
-	<script src="lib/jquery.flot.min.js"></script>
+	<script src="library/jquery.flot.min.js"></script>
 	<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
-	<script src="lib/jquery.flot.resize.min.js"></script>
+	<script src="library/jquery.flot.resize.min.js"></script>
 	<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-	<script src="lib/jquery.flot.pie.min.js"></script>
+	<script src="library/jquery.flot.pie.min.js"></script>
 	<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-	<script src="lib/jquery.flot.categories.min.js"></script>
+	<script src="library/jquery.flot.categories.min.js"></script>
 
 	<!-- jQuery Knob -->
-	<script src="lib/jquery.knob.js"></script>
+	<script src="library/jquery.knob.js"></script>
 	<!-- Sparkline -->
 	<!-- Angular JS -->
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script src="lib/highcharts.js"></script>
+	<!--script src="lib/highcharts.js"></script-->
 
 	<script src="lib/sockjs-0.3.4.js"></script>
 	<script src="lib/stomp.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 	<!-- Page script -->
 	<script>
 
+	
 var app = angular.module("myApp", []);
+
+var temperature1,temperature2,temperature3,temperature4;
+var time1,time2,time3,time4;
+var time;
+var temperature;
+
     //-------------[ Temperature Controller ]-----------------------//
 /*
     app.service('chartService',['$http', function chartService($http) {
@@ -974,28 +983,47 @@ function randomFloatBetween(minValue,maxValue,precision){
 }
 
 function updateChart(chartId, seriesArray){
-  console.log(seriesArray);
+ // console.log("Data :" + seriesArray);
         $('#'+chartId).highcharts({
 
-                chart: { zoomType: 'x'/*, events : {
-                    load : function () {
-
-                        // set up the updating of the chart each second
-                        var series = this.series[0];
-                        setInterval(function () {
-                            var x = (new Date()).getTime(), // current time
-                                y = Math.round(Math.random() * 100);
-                            series.addPoint([x, y], true, true);
-                        }, 1000);
-                    }
-                }*/},
-                title: { text: 'Temperature' },
-                subtitle: null,
-                xAxis: { type: 'datetime' },
-                yAxis: { title: { text: 'Temp F' } },
-      tooltip: {
-              pointFormat: "Temperature: {point.y:.1f} F"
-          },
+                chart: { zoomType: 'x', 
+                		 /*events: {
+	                    load: function () {
+                 	                    	
+	                    // set up the updating of the chart each second
+	                    var series = this.series[0];
+	                    setInterval(function () {
+	                        var x = time, // current time
+	                            y = temperature;
+	                        series.addPoint([x, y], true, true);
+	                    },5000); 
+	                }
+	            }*/},
+	            title: {
+	                text: 'Live Temperature Data'
+	            },
+	            xAxis: {
+	                type: 'datetime',
+	                tickPixelInterval:150
+	            },
+	            yAxis: {
+	                title: {
+	                    text: 'Temperature F',
+	                    tickPixelInterval:2
+	                },
+	                plotLines: [{
+	                    value: 0,
+	                    width: 1,
+	                    color: '#808080'
+	                }]
+	            },
+	            tooltip: {
+	                formatter: function () {
+	                    return '<b>' + this.series.name + '</b><br/>' +
+	                        Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
+	                        Highcharts.numberFormat(this.y, 2);
+	                }
+	            },
                 legend: { enabled: false },
                 plotOptions: {
                     area: {
@@ -1009,7 +1037,7 @@ function updateChart(chartId, seriesArray){
                             stops: [
                                 //[0, '#3333FF'],
                                 [0, Highcharts.Color('#777777').setOpacity(0.75).get('rgba')],
-                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.15).get('rgba')],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0).get('rgba')],
                             ]
                         },
                         marker: {
@@ -1028,17 +1056,6 @@ function updateChart(chartId, seriesArray){
           });
 }
 
-  //setInterval(testCall, 15000);
-
-  function testCall(){
-    var seriesArray1 = [{name:"Name 1", type:"area", data: temperature_chart1_value},{name:"Name", type:"area", data: temperature_chart2_value}];
-
-    var seriesArray2 = [{name:"Name 1", type:"area", data: temperature_chart3_value},{name:"Name", type:"area", data: temperature_chart4_value}];
-
-    updateChart("container1",seriesArray1);
-    updateChart("container2",seriesArray2);
-
-  }
   
 
   $(function () {
@@ -1083,24 +1100,21 @@ function updateChart(chartId, seriesArray){
             var socket = new SockJS('/temperature');
             stompClient = Stomp.over(socket);            
             stompClient.connect({}, function(frame) {
-                setConnected(true);
-                console.log('Connected: ' + frame);
-                stompClient.subscribe('/topic/temperature/latest', function(data){
-                    //showGreeting(greeting);
-                    getLatestTemperature(data);
-                });
-                stompClient.subscribe('/topic/temperature/forecast', function(data){
-                    getForecastTemperature(data);
-                });
-                stompClient.subscribe('/topic/temperature/general', function(data){
-                    getGeneralTemperature(data);
-                });
-                stompClient.subscribe('/topic/temperature/activetemperature', function(data){
-                    updateActiveTemperature(data);
-                });
-                startSending();
+	            setConnected(true);
+	            stompClient.subscribe('/topic/temperature/latest', function(data){
+	                processLatestTemperature(data);
+	            });
+	            stompClient.subscribe('/topic/temperature/forecast', function(data){
+	                processForecastTemperature(data);
+	            });
+	            stompClient.subscribe('/topic/temperature/general', function(data){
+	                processGeneralTemperature(data);
+	            });
+	            stompClient.subscribe('/topic/temperature/activetemperature', function(data){
+	                processActiveTemperature(data);
+	            });
+	            sendProcessingRequests();
             });
-
         }
         
         function disconnect() {
@@ -1108,98 +1122,142 @@ function updateChart(chartId, seriesArray){
                 stompClient.disconnect();
             }
             setConnected(false);
-            console.log("Disconnected");
         }
-        
-        
-
-        function getLatestTemperature(data){
-          //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
-          console.log("getLatestTemperature", data.body);
+	 
+        function processLatestTemperature(data){
+          //get the json  and parse to check which device id and then accordingly update the chart base of the chart id
           if(data != null){
         	  if(data.body != null){
 	    		  var jsonObj = JSON.parse(data.body);
 	    		  var dId = jsonObj.queries[0].results[0].name;
 	    		  var val = jsonObj.queries[0].results[0].values;
-	    		  //get single value to update "values":[[1462114482899,63.05]
+	    		  
 	    		  if(val.length > 0){
-	    		    var latestValue = val[0][1]; 
-					if(dId == "28-ff-2c-31-44-04-00-c2"){
-						chartId = "latest_1";
+     				var temperature = val[0][1], time = val[0][0];
+					var blockId;
+	    		    if(dId == "28-ff-2c-31-44-04-00-c2"){
+						chartId = "temperature_chart1";
+						blockId = "latest_1";
 					}else if(dId == "28-26-1c-60-07-00-00-ad"){
-						chartId = "latest_2";
+						chartId = "temperature_chart2";
+						blockId = "latest_2";
 					}else if(dId == "28-4d-4a-60-07-00-00-9f"){
-						chartId = "latest_3";
+						chartId = "temperature_chart3";
+						blockId = "latest_3";
 					}else if(dId == "28-db-b1-1f-06-00-00-d3"){
-						chartId = "latest_4";
+						blockId = "latest_4";
+						chartId = "temperature_chart4";
 					}
-					document.getElementById(chartId).innerHTML = latestValue.toPrecision(4);
+					var chart = $('#'+chartId).highcharts();
+					var series = chart.series[0];
+					var x = time, // current time
+                        y = temperature;
+                	series.addPoint([x, y], true, true);
+                	//for comparisonChart12
+                	//val of 1 & 2
+                	var chart12 = $('#container1').highcharts();
+                	var chart34 = $('#container2').highcharts();
+                	if(chart12 != null && (dId == "28-ff-2c-31-44-04-00-c2" || dId == "28-26-1c-60-07-00-00-ad")){
+	                	var chart1Series = chart12.series[0];
+	                	var chart2Series = chart12.series[1];
+	                	//chart1 temp //chart2 temp
+	                	var tempx = time;
+	                	var tempy = temperature;
+	                	if(dId == "28-ff-2c-31-44-04-00-c2"){
+	                		chart1Series.addPoint([tempx, tempy], true, true);
+	                	}else{
+	                		chart2Series.addPoint([tempx, tempy], true, true);
+	                	}
+                	}
+                	if(chart34 != null && (dId == "28-4d-4a-60-07-00-00-9f" || dId == "28-db-b1-1f-06-00-00-d3")){
+	                	var chart3Series = chart34.series[0];
+	                	var chart4Series = chart34.series[1];
+	                	//chart1 temp //chart2 temp
+	                	var tempx = time;
+	                	var tempy = temperature;
+	                	if(dId == "28-4d-4a-60-07-00-00-9f"){
+	                		chart3Series.addPoint([tempx, tempy], true, true);
+	                	}else{
+	                		chart4Series.addPoint([tempx, tempy], true, true);
+	                	}
+                	}
+                	
+                	//for comparisonChart34
+                	
+                	
+                	
+                	document.getElementById(blockId).innerHTML = usePrecision(temperature);
 	    		  }
         	  }
           }
         }
         
-        function getGeneralTemperature(data){
-            //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
-            console.log("getGeneralTemperature", data.body);
-            if(data != null){
-          	  if(data.body != null){
-          		  var jsonObj = JSON.parse(data.body);
-          		  var dId = jsonObj.queries[0].results[0].name;
-          		  var val = jsonObj.queries[0].results[0].values;
-          		  var aggregator = jsonObj.queries[0].results[0].aggregation;
-                  var deviceIds = ["28-ff-2c-31-44-04-00-c2","28-26-1c-60-07-00-00-ad","28-4d-4a-60-07-00-00-9f","28-db-b1-1f-06-00-00-d3"];
-                  var elementIds = ["temperature_chart1","temperature_chart2","temperature_chart3","temperature_chart4"];
-
-					var chartId;
-          		    if(dId == "28-ff-2c-31-44-04-00-c2"){
-						chartId = "temperature_chart1";
-						temperature_chart1_value = val;
-						chart1_aggregator = aggregator;
-						document.getElementById('chart1_max').value = aggregator[0].max.toPrecision(4);
-						document.getElementById('chart1_min').value = aggregator[0].min.toPrecision(4);
-						document.getElementById('chart1_avg').value = aggregator[0].avg.toPrecision(4);
-						
-					}else if(dId == "28-26-1c-60-07-00-00-ad"){
-						chartId = "temperature_chart2";
-						temperature_chart2_value = val;
-						document.getElementById('chart2_max').value = aggregator[0].max.toPrecision(4);
-						document.getElementById('chart2_min').value = aggregator[0].min.toPrecision(4);
-						document.getElementById('chart2_avg').value = aggregator[0].avg.toPrecision(4);
-					}else if(dId == "28-4d-4a-60-07-00-00-9f"){
-						chartId = "temperature_chart3";
-						temperature_chart3_value = val;
-						document.getElementById('chart3_max').value = aggregator[0].max.toPrecision(4);
-						document.getElementById('chart3_min').value = aggregator[0].min.toPrecision(4);
-						document.getElementById('chart3_avg').value = aggregator[0].avg.toPrecision(4);
-					}else if(dId == "28-db-b1-1f-06-00-00-d3"){
-						chartId = "temperature_chart4";
-						temperature_chart4_value = val;
-						document.getElementById('chart4_max').value = aggregator[0].max.toPrecision(4);
-						document.getElementById('chart4_min').value = aggregator[0].min.toPrecision(4);
-						document.getElementById('chart4_avg').value = aggregator[0].avg.toPrecision(4);
-					}
-          		    //var chart = ("#"+chartId).highcharts();
-          		    var seriesArray1 = [{name:"Name 1", type:"area", data: val}];
-          		    updateChart(chartId, seriesArray1);
-          		    testCall();
-          	  }
-            }
-          }
-
-
-        function getForecastTemperature(data){
-            //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
-            console.log("getForecastTemperature", data.body);
+	    function processGeneralTemperature(data){
+	        //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
+	        if(data != null){
+	      	  if(data.body != null){
+	      		  var jsonObj = JSON.parse(data.body);
+	      		  var dId = jsonObj.queries[0].results[0].name;
+	      		  var val = jsonObj.queries[0].results[0].values;
+	      		  var aggregator = jsonObj.queries[0].results[0].aggregation;
+	              var deviceIds = ["28-ff-2c-31-44-04-00-c2","28-26-1c-60-07-00-00-ad","28-4d-4a-60-07-00-00-9f","28-db-b1-1f-06-00-00-d3"];
+	              var elementIds = ["temperature_chart1","temperature_chart2","temperature_chart3","temperature_chart4"];
+	  
+				var chartId;
+				if(dId == "28-ff-2c-31-44-04-00-c2"){
+					chartId = "temperature_chart1";
+					temperature_chart1_value = val;
+				}else if(dId == "28-26-1c-60-07-00-00-ad"){
+					chartId = "temperature_chart2";
+					temperature_chart2_value = val;
+				}else if(dId == "28-4d-4a-60-07-00-00-9f"){
+					chartId = "temperature_chart3";
+					temperature_chart3_value = val;
+				}else if(dId == "28-db-b1-1f-06-00-00-d3"){
+					chartId = "temperature_chart4";
+					temperature_chart4_value = val;
+				}
+				var seriesArray1 = [{name:"Name 1", type:"area", animation: {duration: 2000}, data: val}];
+				var seriesArray12 = [{name:"Name 1", type:"area", data: temperature_chart1_value},{name:"Name", type:"area", data: temperature_chart2_value}];
+				var seriesArray34 = [{name:"Name 1", type:"area", data: temperature_chart3_value},{name:"Name", type:"area", data: temperature_chart4_value}];
+				updateChart("container1",seriesArray12);
+				updateChart("container2",seriesArray34);
+				updateChart(chartId,seriesArray1);
+				updateMinMaxAvgOfCharts(chartId, aggregator);
+	      	  }
+	        }
+	      }
+        
+        function updateMinMaxAvgOfCharts(chartId, aggregator){
+        	var id = chartId;
+			var max = usePrecision(aggregator[0].max);
+			var min = usePrecision(aggregator[0].min);
+			var avg = usePrecision(aggregator[0].avg);
+			document.getElementById(chartId+'_max').value = max;
+			document.getElementById(chartId+'_min').value = min;
+			document.getElementById(chartId+'_avg').value = avg;
         }
         
-        function updateActiveTemperature(data){
+        function usePrecision(val){
+        	if(val > 0)
+        		val = val.toPrecision(4);
+        	else
+        		val = 0;
+        	return val;
+        }
+
+
+        function processForecastTemperature(data){
+            //get the json data and parse to check which device id and then accordingly update the chart base of the chart id
+            //console.log("getForecastTemperature", data.body);
+        }
+        
+        function processActiveTemperature(data){
 			if(data != null){
 				if(data.body != null){
 					var jsonObj = JSON.parse(data.body);
 					var daily = jsonObj.daily;
 					var summary = daily.summary;
-					console.log("Summary : " + summary);
 					var icon = daily.icon;
 					var html = '<div><img src="' +getIcon(icon)+'" />' + '<h4>'+summary+'</h4></div>';
 					
@@ -1237,7 +1295,6 @@ function updateChart(chartId, seriesArray){
         }
         
         function getIcon(iconStr){
-        	
 			if(iconStr=='clear-day'){
 				iconStr = 'http://openweathermap.org/img/w/01d.png'
 			}
@@ -1272,40 +1329,47 @@ function updateChart(chartId, seriesArray){
         }
 
         
-        function sendName() {
+        function sendProcessingRequests() {
           //list of id's in for loop 
-          for(var x = 0; x < deviceIds.length; x++){
-        	  //send for general requests
-        	  var id = deviceIds[x];
-              stompClient.send("/app/temperature/general/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
-              stompClient.send("/app/temperature/latest/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
-          }
-          //stompClient.send("/app/temperature/latest/deviceId/"+deviceId1+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
-          //stompClient.send("/app/temperature/forecast/deviceId/"+deviceId2+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '2' }));
-
+          sendGeneralRequest();
+          setInterval(sendLatestRequest, 1000);
+          sendForecastRequest();
+          comparisonCharts();
         }
 
         connect();
         //initialize charts
-        var seriesArray1 = [{name:"", type:"area", data: []}];
+        //var seriesArray1 = [{name:"", type:"area", data: []}];
         Highcharts.setOptions({global: { useUTC: false } });
-        updateChart("container1",seriesArray1);
-        updateChart("container2",seriesArray1);
-        
-        updateChart("temperature_chart1", seriesArray1);
-        updateChart("temperature_chart2", seriesArray1);
-        updateChart("temperature_chart3", seriesArray1);
-        updateChart("temperature_chart4", seriesArray1);
-        
-        function startSending(){
-          setInterval(sendName, 3000);
-          setInterval(getActiveTemperature, 3000);
+
+        function sendGeneralRequest(){
+            for(var x = 0; x < deviceIds.length; x++){
+          	  //send for general requests
+          	  var id = deviceIds[x];
+              stompClient.send("/app/temperature/general/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
+            }
         }
-        function getActiveTemperature(){
+        
+        function sendLatestRequest(){
+            for(var x = 0; x < deviceIds.length; x++){
+            	  //send for latest requests
+            	  var id = deviceIds[x];
+                stompClient.send("/app/temperature/latest/deviceId/"+id+"?callback=1234567890", {}, JSON.stringify({ 'deviceId': '3' }));
+              }
+        }
+        
+        function sendForecastRequest(){
+        	//send forecast request
         	stompClient.send("/app/temperature/activetemperature/deviceId/test?callback=1234567890", {}, JSON.stringify({ 'deviceId': '1' }));
         }
         
-        
+        function comparisonCharts(){
+          var seriesArray1 = [{name:"Name 1", type:"area", data: temperature_chart1_value},{name:"Name", type:"area", data: temperature_chart2_value}];
+          var seriesArray2 = [{name:"Name 1", type:"area", data: temperature_chart3_value},{name:"Name", type:"area", data: temperature_chart4_value}];
+          updateChart("container1",seriesArray1);
+          updateChart("container2",seriesArray2);
+        }
+
     </script>
 
 </body>
