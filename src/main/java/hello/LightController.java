@@ -6,8 +6,10 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
 
 import org.codehaus.jettison.json.JSONArray;
+import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
@@ -27,10 +29,19 @@ public class LightController {
 			if(sendTo.equals("general")){
 				//get the general data for all the devices available
 				returnValue = getGeneralLightInformation(deviceId);
+			}else if(sendTo.equals("get-light-recommendation")){
+				//get the recommendation for each device available
+				returnValue = getLightRecommendation(deviceId);
 			}
 		}
 		
 		return returnValue;
+	}
+
+	private String getLightRecommendation(String deviceId) throws JSONException {
+		// Get recommendations from MongoDB
+		String str = "{'deviceId':'" + deviceId +"'}";
+		return new JSONObject(str).toString();
 	}
 
 	private String getGeneralLightInformation(String deviceId) {
