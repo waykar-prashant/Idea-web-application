@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="page00App">
+<html ng-app="myApp">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -254,58 +254,8 @@ desired effect
 				</div>
 			</nav>
 		</header>
-		<!-- Left side column. contains the logo and sidebar -->
-		<aside class="main-sidebar">
+		<div ng-include="'left-menu.html'"></div>
 
-			<!-- sidebar: style can be found in sidebar.less -->
-			<section class="sidebar">
-
-				<!-- Sidebar user panel (optional) -->
-				<div class="user-panel">
-					<div class="pull-left image">
-						<img src="dist/img/user2-160x160.jpg" class="img-circle"
-							alt="User Image">
-					</div>
-					<div class="pull-left info">
-						<p>Alexander Pierce</p>
-						<!-- Status -->
-						<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-					</div>
-				</div>
-
-				<!-- search form (Optional) -->
-				<form action="#" method="get" class="sidebar-form">
-					<div class="input-group">
-						<input type="text" name="q" class="form-control"
-							placeholder="Search..."> <span class="input-group-btn">
-							<button type="submit" name="search" id="search-btn"
-								class="btn btn-flat">
-								<i class="fa fa-search"></i>
-							</button>
-						</span>
-					</div>
-				</form>
-				<!-- /.search form -->
-
-				<!-- Sidebar Menu -->
-				<ul class="sidebar-menu">
-					<li class="header">HEADER</li>
-					<!-- Optionally, you can add icons to the links -->
-					<li class="active"><a href="#"><i class="fa fa-link"></i>
-							<span>Link</span></a></li>
-					<li><a href="#"><i class="fa fa-link"></i> <span>Another
-								Link</span></a></li>
-					<li class="treeview"><a href="#"><i class="fa fa-link"></i>
-							<span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
-						<ul class="treeview-menu">
-							<li><a href="#">Link in level 2</a></li>
-							<li><a href="#">Link in level 2</a></li>
-						</ul></li>
-				</ul>
-				<!-- /.sidebar-menu -->
-			</section>
-			<!-- /.sidebar -->
-		</aside>
 
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
@@ -427,7 +377,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -435,7 +385,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_family_couch_e" class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -488,7 +438,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -496,10 +446,10 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_horse_picture" class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
-				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
+				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip"  title="Recommendations" data-widget="chat-pane-toggle">
 				                      <i class="fa fa-comments"></i></button>
 				                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
 				                    </button>
@@ -549,7 +499,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -557,7 +507,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_aspen" class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -610,7 +560,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -618,7 +568,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_family_w"  class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -671,7 +621,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -679,7 +629,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_family_couch_w"  class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -732,7 +682,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -740,7 +690,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_family_tv" class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -794,7 +744,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -802,7 +752,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_round_room_e" class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -855,7 +805,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -863,7 +813,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_round_room_nw"  class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -917,7 +867,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -925,7 +875,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages"  id="tooltip_round_room_sw"  class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -977,7 +927,7 @@ desired effect
 			                <!-- /.col -->
 			                <div class="col-md-4">
 			                  <p class="text-center">
-			                    <strong>Goal Completion</strong>
+			                    <strong>Analysis Results</strong>
 			                  </p>
 			
 			                  <!-- DIRECT CHAT -->
@@ -985,7 +935,7 @@ desired effect
 				                <div class="box-header with-border">
 				                  <h3 class="box-title">Recommendations</h3>
 				                  <div class="box-tools pull-right">
-				                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+				                    <span data-toggle="tooltip" title="3 New Messages" id="tooltip_family_e"  class="badge bg-yellow">3</span>
 				                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 				                    </button>
 				                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Recommendations" data-widget="chat-pane-toggle">
@@ -1118,6 +1068,9 @@ desired effect
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="dist/js/app.min.js"></script>
+	<!-- Angular JS -->
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
 	<script src="lib/highcharts.js"></script>
 	<script src="lib/sockjs-0.3.4.js"></script>
@@ -1132,6 +1085,7 @@ desired effect
 	}
 	</style>
 	<script>
+	var app = angular.module("myApp", []);
 	$(function () {
 	    $('#container').highcharts({
 	        title: {
@@ -1198,29 +1152,27 @@ function onConnectionLost(responseObject) {
 }
 
 function onMessageArrived(message) {
-	//console.log(message);
+	
 	var msg = JSON.parse(message.payloadString);
+	console.log(msg);
 	var light = msg.name;
 	if(msg.hasOwnProperty("client") && msg.hasOwnProperty("name")){
 		var light = msg.name;
 		if(light){
-			console.log('Light:'+light+' State:'+msg.state);
+			//console.log('Light:'+light+' State:'+msg.state);
 			var state = msg.state;
 			var id = light.toLowerCase().replace(" ","").replace(" ","");
 			//console.log("id", id);
 			var set1 = document.getElementById(id);
 			//console.log("doc", set1)
 			if(set1){
-				if(state=='Red'){
+				if(state!='Red'){
 	       			set1.src = "dist/img/bulb_PNG1244.png";
 		   		}
 		   		else{
 		   			set1.src = "dist/img/bulb_PNG1243.png";
 		   		}
 			}
-			//check the name and match it with the id and push it in the series of each graph
-			//series.push
-			
 		}
 	}
 }
@@ -1231,7 +1183,7 @@ function connectWebSocket() {
     stompClient = Stomp.over(socket);            
     stompClient.connect({}, function(frame) {
         //setConnected(true);
-        console.log('Connected: ' + frame);
+        //console.log('Connected: ' + frame);
         stompClient.subscribe('/topic/light/general', function(data){
         	processGeneralLightInformation(data);
         });
@@ -1254,9 +1206,9 @@ function disconnectWebSocket() {
 
 function processLightRecommendation(data){
 	var jsonObj = JSON.parse(data.body);
-	console.log("test", jsonObj);
-	var deviceId = jsonObj.deviceId;
-	console.log("deviceId", deviceId);
+	//console.log("test", jsonObj);
+	var deviceId = jsonObj.deviceID;
+	//console.log("deviceId", deviceId);
 	if(recommendationCounter%2 == 0){
 		//add left
 		addRecommendationToBox(deviceId, 0, jsonObj);	
@@ -1267,6 +1219,15 @@ function processLightRecommendation(data){
 }
 
 function addRecommendationToBox(boxId, lr, data){
+	//console.log("TEST", data);
+	
+	var content = "<p>On Time : " + data.onTimeInHours + " hrs</p>"
+				+ "<p>On Time : " + data.onTimeInPercent + "% </p>"
+				+ "<p>Power Usage : " + data.onTimeUsageInWatts + "W </p>"
+				+ "<p>Power Usage : " + data.onTimeInHours + "% </p>"
+				+ "<p>Power Wastage : " + data.wasteTimeUsageInWatts + "W </p>"
+				+ "<p>Power Wastage : " + data.wasteTimeInPercent + "% </p>";
+	var timestamp = new Date(data.timestamp);
 	var css = "pull-right";
 	var css2 = "right";
 	if(lr==0){
@@ -1276,25 +1237,39 @@ function addRecommendationToBox(boxId, lr, data){
 		css = "pull-right";
 		css2 = "left";
 	}
-	var message = "This is my message";
-	var date = new Date();
+	var message = data;
+	//var date = new Date();
     var myhtml = '<div class="direct-chat-msg ' + css2+ '"><div class="direct-chat-info clearfix">'
-	         + '<span class="direct-chat-timestamp ' + css +'">' + date +'</span>'
+	         + '<span class="direct-chat-timestamp ' + css +'">' + timestamp +'</span>'
 		     + '</div>'
 	         + '<div class="direct-chat-text">'
-			 + message
+			 + content
 			 + '</div>'
 			 + '</div>';
-			 console.log("html", myhtml);
+			 //console.log("html", myhtml);
 			 //var el = document.createElement("div");
 			 //el.innerHtml = myhtml;
-	document.getElementById('box_'+boxId).innerHTML = myhtml + document.getElementById('box_'+boxId).innerHTML;
-
+	if(!data.hasOwnProperty('Error')){
+		//document.getElementById('box_'+boxId).innerHTML = myhtml + document.getElementById('box_'+boxId).innerHTML;
+    	$("#box_"+boxId).prepend(myhtml);
+    	var count = 1 + parseInt(document.getElementById('tooltip_'+boxId).innerHTML);
+    	document.getElementById('tooltip_'+boxId).innerHTML = count;    	
+    	var mess;
+    	if(parseInt(count) == 1) 
+    		mess = count + " New Message";
+    	else 
+    		mess = count + " New Messages"; 
+    	$('#tooltip_'+boxId)
+        .attr('title', mess)
+        .tooltip('fixTitle')
+        .tooltip('setContent');
+    	//document.getElementById('tooltip_'+boxId).title = mess;
+	}
 }
 
 function processGeneralLightInformation(data){
 	
-	console.log("Data", data);
+	//console.log("Data", data);
     if(data != null){
     	  if(data.body != null){
     		  var jsonObj = JSON.parse(data.body);
@@ -1303,8 +1278,8 @@ function processGeneralLightInformation(data){
     		  //get the chartid and the deviceId from the json
     		  var chartId = jsonObj.chartId;
     		  var deviceId = jsonObj.deviceId;
-    		  console.log("chartId", chartId);
-    		  console.log("deviceId", deviceId);
+    		  //console.log("chartId", chartId);
+    		  //console.log("deviceId", deviceId);
     		  
     		  var seriesArray = [{
   	            type: 'spline',
@@ -1321,7 +1296,7 @@ function processGeneralLightInformation(data){
   	            }
   	        }];
     		  var newChartId = "chart_"+deviceId;
-    		  console.log(newChartId, seriesArray);
+    		  //console.log(newChartId, seriesArray);
 			updateChart(newChartId, chartForDeviceName, seriesArray);
     		  
     	  }
@@ -1335,8 +1310,8 @@ function generateDataPointsForToday(){
 	var endTime = new Date();
 	endTime = endTime.setHours(23,59,59,0);
 	
-	var sunriseTime = (new Date()).setHours(6,0,0,0);
-	var sunsetTime = (new Date()).setHours(20,30,0,0);
+	var sunriseTime = (new Date()).setHours(5,44,0,0);
+	var sunsetTime = (new Date()).setHours(20,8,0,0);
 	var seriesArray = [];
 	for(i = startTime; i < endTime; i=i+3600000){
 		//make series graph
@@ -1361,7 +1336,7 @@ function camelCase(input) {
 }
 
 function updateChart(chartId, chartForDeviceName, seriesArray){
-	  console.log(seriesArray);
+	 //console.log(seriesArray);
 	        $('#'+chartId).highcharts({
 	            title: {
 	                text: 'Light utilization for - ' + chartForDeviceName
@@ -1379,9 +1354,24 @@ function updateChart(chartId, chartForDeviceName, seriesArray){
 
 
 function requestLightInformation(){
-	setInterval(sendLightInformation, 5000);
-	setInterval(requestLightRecommendation, 5000);
+	//initialize the tooltips
+	initializeTooltips();
+	sendLightInformation();
+	requestLightRecommendation();
+	setInterval(sendLightInformation, 10000);
+	setInterval(requestLightRecommendation, 15000);
 }
+
+function initializeTooltips() {
+    //list of id's in for loop 
+    for(var x = 0; x < deviceIds.length; x++){
+  	  //send for general requests
+  	  var deviceId = deviceIds[x];
+  	  var id = "tooltip_"+deviceId;
+       document.getElementById(id).innerHTML = 0;
+    }
+}
+
 
 function sendLightInformation() {
     //list of id's in for loop 
