@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 import org.codehaus.jettison.json.JSONArray;
@@ -43,9 +44,16 @@ public class TemperatureController {
 				returnValue = getGeneralTemperature(deviceId, callbackId);
 			}else if(sendTo.equals("activetemperature")){
 				returnValue = MongoDBConnection.getActiveTemperature().toString();
+			}else if(sendTo.equals("get-temp-notification")){
+				returnValue = getTemperatureRecommendation(deviceId);
 			}
 		}
 		return returnValue.toString();
+	}
+
+	private String getTemperatureRecommendation(String deviceId) {
+		// TODO Auto-generated method stub
+		return "This is my Temp recommendation : " + new Date().toString();
 	}
 
 	private String getGeneralTemperature(String deviceId, String callbackId) {
