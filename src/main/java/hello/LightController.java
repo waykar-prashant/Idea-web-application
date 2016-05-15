@@ -6,13 +6,19 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
 
 import org.codehaus.jettison.json.JSONArray;
+import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
 
 @Controller
 public class LightController {
@@ -27,10 +33,32 @@ public class LightController {
 			if(sendTo.equals("general")){
 				//get the general data for all the devices available
 				returnValue = getGeneralLightInformation(deviceId);
+			}else if(sendTo.equals("get-light-recommendation")){
+				//get the recommendation for each device available
+				returnValue = getLightRecommendation(deviceId);
 			}
 		}
 		
 		return returnValue;
+	}
+
+	private String getLightRecommendation(String deviceId) throws JSONException {
+		// Get recommendations from MongoDB for deviceId
+		DBCollection collection = MongoDBConnection.getDBConnection().getCollection("newlights");
+		DBCursor cursor = null;
+		BasicDBObject query = new BasicDBObject();
+		BasicDBObject retreivalObj = null;
+		query.put("deviceID", deviceId);
+		cursor = collection.find(query);
+		String err = " { \"Error\": \"Device Not Found\" }";
+		if (cursor.count() == 0) {
+			return err;
+		} else {
+			retreivalObj = (BasicDBObject) cursor.next();
+		}
+		return retreivalObj.toString();
+		/*String str = "{'deviceId':'" + deviceId +"'}";
+		return new JSONObject(str).toString();*/
 	}
 
 	private String getGeneralLightInformation(String deviceId) {
